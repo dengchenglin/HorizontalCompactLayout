@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="48" height="25"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="48" height="25"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tFf-i5-onC">
+                        <rect key="frame" x="0.0" y="0.0" width="48" height="25"/>
+                        <color key="backgroundColor" red="1" green="0.1673518121" blue="0.297546804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="tFf-i5-onC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="0F8-2J-YeW"/>
+                <constraint firstItem="tFf-i5-onC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="F9V-Sk-Uj3"/>
+                <constraint firstAttribute="bottom" secondItem="tFf-i5-onC" secondAttribute="bottom" id="SfJ-bw-41A"/>
+                <constraint firstAttribute="trailing" secondItem="tFf-i5-onC" secondAttribute="trailing" id="nZ7-0j-ehx"/>
+            </constraints>
+            <size key="customSize" width="48" height="25"/>
+            <connections>
+                <outlet property="label" destination="tFf-i5-onC" id="yjG-Gz-guK"/>
+            </connections>
+            <point key="canvasLocation" x="434" y="363.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
