@@ -6,9 +6,9 @@
 //  Copyright © 2016年 peikua. All rights reserved.
 //
 
-#import "HorizontalCompactLayout.h"
+#import "CLHorizontalCompactLayout.h"
 
-@implementation HorizontalCompactLayout
+@implementation CLHorizontalCompactLayout
 
 -(id)init
 {

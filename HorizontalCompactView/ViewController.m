@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "HorizontalCompactLayout.h"
+#import "CLHorizontalCompactLayout.h"
 #import "CollectionViewCell.h"
 @interface ViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 @property (nonatomic,strong)UICollectionView *collectionView;
@@ -21,7 +21,7 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    HorizontalCompactLayout *layout = [HorizontalCompactLayout new];
+    CLHorizontalCompactLayout *layout = [CLHorizontalCompactLayout new];
     self.collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 20, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 20) collectionViewLayout:layout];
     self.collectionView.backgroundColor = [UIColor whiteColor];
     self.collectionView.delegate = self;

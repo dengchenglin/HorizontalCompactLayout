@@ -13,7 +13,7 @@
 		EB5CFE241D66A0CC00245AE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB5CFE221D66A0CC00245AE7 /* Main.storyboard */; };
 		EB5CFE261D66A0CC00245AE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB5CFE251D66A0CC00245AE7 /* Assets.xcassets */; };
 		EB5CFE291D66A0CC00245AE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB5CFE271D66A0CC00245AE7 /* LaunchScreen.storyboard */; };
-		EB5CFE331D66A14900245AE7 /* HorizontalCompactLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5CFE321D66A14900245AE7 /* HorizontalCompactLayout.m */; };
+		EB5CFE331D66A14900245AE7 /* CLHorizontalCompactLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5CFE321D66A14900245AE7 /* CLHorizontalCompactLayout.m */; };
 		EB5CFE371D66A4FD00245AE7 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5CFE351D66A4FD00245AE7 /* CollectionViewCell.m */; };
 		EB5CFE381D66A4FD00245AE7 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB5CFE361D66A4FD00245AE7 /* CollectionViewCell.xib */; };
 /* End PBXBuildFile section */
@@ -29,8 +29,8 @@
 		EB5CFE251D66A0CC00245AE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB5CFE281D66A0CC00245AE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB5CFE2A1D66A0CC00245AE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EB5CFE311D66A14900245AE7 /* HorizontalCompactLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorizontalCompactLayout.h; sourceTree = "<group>"; };
-		EB5CFE321D66A14900245AE7 /* HorizontalCompactLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorizontalCompactLayout.m; sourceTree = "<group>"; };
+		EB5CFE311D66A14900245AE7 /* CLHorizontalCompactLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHorizontalCompactLayout.h; sourceTree = "<group>"; };
+		EB5CFE321D66A14900245AE7 /* CLHorizontalCompactLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHorizontalCompactLayout.m; sourceTree = "<group>"; };
 		EB5CFE341D66A4FD00245AE7 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
 		EB5CFE351D66A4FD00245AE7 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 		EB5CFE361D66A4FD00245AE7 /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 		EB5CFE181D66A0CC00245AE7 /* HorizontalCompactView */ = {
 			isa = PBXGroup;
 			children = (
-				EB5CFE301D66A11100245AE7 /* HorizontalCompactLayout */,
+				EB5CFE301D66A11100245AE7 /* CLHorizontalCompactLayout */,
 				EB5CFE1C1D66A0CC00245AE7 /* AppDelegate.h */,
 				EB5CFE1D1D66A0CC00245AE7 /* AppDelegate.m */,
 				EB5CFE1F1D66A0CC00245AE7 /* ViewController.h */,
@@ -91,13 +91,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		EB5CFE301D66A11100245AE7 /* HorizontalCompactLayout */ = {
+		EB5CFE301D66A11100245AE7 /* CLHorizontalCompactLayout */ = {
 			isa = PBXGroup;
 			children = (
-				EB5CFE311D66A14900245AE7 /* HorizontalCompactLayout.h */,
-				EB5CFE321D66A14900245AE7 /* HorizontalCompactLayout.m */,
+				EB5CFE311D66A14900245AE7 /* CLHorizontalCompactLayout.h */,
+				EB5CFE321D66A14900245AE7 /* CLHorizontalCompactLayout.m */,
 			);
-			path = HorizontalCompactLayout;
+			path = CLHorizontalCompactLayout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,7 +175,7 @@
 				EB5CFE371D66A4FD00245AE7 /* CollectionViewCell.m in Sources */,
 				EB5CFE1E1D66A0CC00245AE7 /* AppDelegate.m in Sources */,
 				EB5CFE1B1D66A0CC00245AE7 /* main.m in Sources */,
-				EB5CFE331D66A14900245AE7 /* HorizontalCompactLayout.m in Sources */,
+				EB5CFE331D66A14900245AE7 /* CLHorizontalCompactLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +326,7 @@
 				EB5CFE2F1D66A0CC00245AE7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

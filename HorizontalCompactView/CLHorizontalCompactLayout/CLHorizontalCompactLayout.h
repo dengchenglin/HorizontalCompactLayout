@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HorizontalCompactLayout : UICollectionViewFlowLayout
+@interface CLHorizontalCompactLayout : UICollectionViewFlowLayout
 
 @end
