@@ -44,9 +44,9 @@
             inset = [(id<UICollectionViewDelegateFlowLayout>)self.collectionView.delegate collectionView:self.collectionView layout:self insetForSectionAtIndex:currentLayoutAttributes.indexPath.section];
         }
         
-        
+        //核心代码
         NSInteger origin = CGRectGetMaxX(prevLayoutAttributes.frame);
-        if(origin + maximumSpacing + currentLayoutAttributes.frame.size.width < self.collectionViewContentSize.width - inset.left - inset.right) {
+        if((origin + maximumSpacing + currentLayoutAttributes.frame.size.width < self.collectionViewContentSize.width - inset.left - inset.right) && (prevLayoutAttributes.indexPath.section == currentLayoutAttributes.indexPath.section)) {
             CGRect frame = currentLayoutAttributes.frame;
             frame.origin.x = origin + maximumSpacing;
             currentLayoutAttributes.frame = frame;
